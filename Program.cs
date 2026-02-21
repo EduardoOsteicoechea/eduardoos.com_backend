@@ -8,6 +8,10 @@ if (string.IsNullOrEmpty(jwtSecret))
 {
     throw new Exception("CRITICAL: JWT_SECRET not found in AWS Parameter Store!");
 }
+else
+{
+    Console.WriteLine("Found JWT!");
+}
 
 builder.Services.AddCors(options =>
 {
