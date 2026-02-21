@@ -36,7 +36,7 @@ app.MapGet("/", () =>
 {
     // Make sure to replace YOUR_S3_BUCKET_URL with your actual public S3 bucket URL 
     // Example: https://eduardoos-static-files.s3.us-east-1.amazonaws.com
-    var s3BaseUrl = "static";
+    var s3BaseUrl = "/static";
 
     var html = $@"<!DOCTYPE html>
 <html lang=""en"">
