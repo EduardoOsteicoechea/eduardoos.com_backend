@@ -52,6 +52,14 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "dependencies": {
+            "AWSSDK.DynamoDBv2": {
+              "target": "Package",
+              "version": "[4.0.14.1, )"
+            },
+            "AWSSDK.Extensions.NETCore.Setup": {
+              "target": "Package",
+              "version": "[4.0.3.22, )"
+            },
             "Amazon.Extensions.Configuration.SystemsManager": {
               "target": "Package",
               "version": "[7.1.0, )"

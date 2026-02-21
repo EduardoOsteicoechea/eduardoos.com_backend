@@ -1,6 +1,11 @@
+using Amazon.DynamoDBv2;
+
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Configuration.AddSystemsManager("/eduardoos/backend/");
+
+builder.Services.AddDefaultAWSOptions(builder.Configuration.GetAWSOptions());
+builder.Services.AddAWSService<IAmazonDynamoDB>();
 
 var jwtSecret = builder.Configuration["JWT_SECRET"];
 
@@ -29,8 +34,21 @@ app.UseCors();
 
 app.MapGet("/", () => new { Message = "Working" });
 
-app.MapGet("/health", () => Results.Ok("Healthy"));
-
-app.MapGet("/api/hello", () => new { Message = "Hello from .NET 9 JIT!" });
+app.MapGet("/dbtest", async (IAmazonDynamoDB db) =>
+{
+    try 
+    {
+        var response = await db.DescribeTableAsync("eduardoos-general-users");
+        return Results.Ok(new { 
+            Status = "Connected", 
+            TableName = response.Table.TableName,
+            ItemCount = response.Table.ItemCount 
+        });
+    }
+    catch (Exception ex)
+    {
+        return Results.Problem($"DynamoDB Error: {ex.Message}");
+    }
+});
 
 app.Run();

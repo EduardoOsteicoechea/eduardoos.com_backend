@@ -8,6 +8,8 @@
 
   <ItemGroup>
     <PackageReference Include="Amazon.Extensions.Configuration.SystemsManager" Version="7.1.0" />
+    <PackageReference Include="AWSSDK.DynamoDBv2" Version="4.0.14.1" />
+    <PackageReference Include="AWSSDK.Extensions.NETCore.Setup" Version="4.0.3.22" />
   </ItemGroup>
 
 </Project>
