@@ -23,6 +23,8 @@ var app = builder.Build();
 
 app.UseCors();
 
+app.MapGet("/", () => new { Message = "Working" });
+
 app.MapGet("/health", () => Results.Ok("Healthy"));
 
 app.MapGet("/api/hello", () => new { Message = "Hello from .NET 9 JIT!" });
