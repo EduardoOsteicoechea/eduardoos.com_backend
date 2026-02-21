@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "paVSBAVU1nk=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\eduar\\Documents\\work\\internal\\eduardoos.com\\eduardoos.com_backend\\eduardoos.com_backend.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\eduar\\.nuget\\packages\\microsoft.netcore.app.host.linux-x64\\9.0.10\\microsoft.netcore.app.host.linux-x64.9.0.10.nupkg.sha512"
+  ],
+  "logs": []
+}

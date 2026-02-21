@@ -1,0 +1,7 @@
+C:\Users\eduar\Documents\work\internal\eduardoos.com\eduardoos.com_backend\bin\Release\net9.0\linux-x64\publish\eduardoos.com_backend
+C:\Users\eduar\Documents\work\internal\eduardoos.com\eduardoos.com_backend\bin\Release\net9.0\linux-x64\publish\appsettings.Development.json
+C:\Users\eduar\Documents\work\internal\eduardoos.com\eduardoos.com_backend\bin\Release\net9.0\linux-x64\publish\appsettings.json
+C:\Users\eduar\Documents\work\internal\eduardoos.com\eduardoos.com_backend\bin\Release\net9.0\linux-x64\publish\eduardoos.com_backend.dll
+C:\Users\eduar\Documents\work\internal\eduardoos.com\eduardoos.com_backend\bin\Release\net9.0\linux-x64\publish\eduardoos.com_backend.deps.json
+C:\Users\eduar\Documents\work\internal\eduardoos.com\eduardoos.com_backend\bin\Release\net9.0\linux-x64\publish\eduardoos.com_backend.runtimeconfig.json
+C:\Users\eduar\Documents\work\internal\eduardoos.com\eduardoos.com_backend\bin\Release\net9.0\linux-x64\publish\eduardoos.com_backend.pdb

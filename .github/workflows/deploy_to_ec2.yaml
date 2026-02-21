@@ -1,0 +1,44 @@
+name: Build and Deploy .NET 9 API
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Code
+      uses: actions/checkout@v4
+
+    - name: Setup .NET 9
+      uses: actions/setup-dotnet@v4
+      with:
+        dotnet-version: '9.0.x'
+
+    - name: Restore and Build
+      run: dotnet restore
+
+    - name: Publish API
+      run: dotnet publish -c Release -r linux-x64 --self-contained false -o ./publish
+
+    - name: Deploy to EC2 via SCP
+      uses: appleboy/scp-action@v0.1.7
+      with:
+        host: ${{ secrets.EC2_HOST }}
+        username: ${{ secrets.EC2_USERNAME }}
+        key: ${{ secrets.EC2_SSH_KEY }}
+        source: "./publish/*"
+        target: "/home/ec2-user/eduardoos_backend"
+        strip_components: 1 
+
+    - name: Restart API Service
+      uses: appleboy/ssh-action@v1.0.3
+      with:
+        host: ${{ secrets.EC2_HOST }}
+        username: ${{ secrets.EC2_USERNAME }}
+        key: ${{ secrets.EC2_SSH_KEY }}
+        script: |
+          # Match your actual service name here:
+          sudo systemctl restart eduardoos_backend.service
