@@ -1,5 +1,14 @@
 var builder = WebApplication.CreateBuilder(args);
 
+builder.Configuration.AddSystemsManager("/eduardoos/backend/");
+
+var jwtSecret = builder.Configuration["JWT_SECRET"];
+
+if (string.IsNullOrEmpty(jwtSecret))
+{
+    throw new Exception("CRITICAL: JWT_SECRET not found in AWS Parameter Store!");
+}
+
 builder.Services.AddCors(options =>
 {
     options.AddDefaultPolicy(policy =>

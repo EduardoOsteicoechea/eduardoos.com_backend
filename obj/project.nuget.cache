@@ -1,10 +1,20 @@
 {
   "version": 2,
-  "dgSpecHash": "paVSBAVU1nk=",
+  "dgSpecHash": "qvuOKBHICKU=",
   "success": true,
   "projectFilePath": "C:\\Users\\eduar\\Documents\\work\\internal\\eduardoos.com\\eduardoos.com_backend\\eduardoos.com_backend.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\eduar\\.nuget\\packages\\microsoft.netcore.app.host.linux-x64\\9.0.10\\microsoft.netcore.app.host.linux-x64.9.0.10.nupkg.sha512"
+    "C:\\Users\\eduar\\.nuget\\packages\\amazon.extensions.configuration.systemsmanager\\7.1.0\\amazon.extensions.configuration.systemsmanager.7.1.0.nupkg.sha512",
+    "C:\\Users\\eduar\\.nuget\\packages\\awssdk.appconfigdata\\4.0.2.14\\awssdk.appconfigdata.4.0.2.14.nupkg.sha512",
+    "C:\\Users\\eduar\\.nuget\\packages\\awssdk.core\\4.0.3.10\\awssdk.core.4.0.3.10.nupkg.sha512",
+    "C:\\Users\\eduar\\.nuget\\packages\\awssdk.extensions.netcore.setup\\4.0.3.21\\awssdk.extensions.netcore.setup.4.0.3.21.nupkg.sha512",
+    "C:\\Users\\eduar\\.nuget\\packages\\awssdk.simplesystemsmanagement\\4.0.6.11\\awssdk.simplesystemsmanagement.4.0.6.11.nupkg.sha512",
+    "C:\\Users\\eduar\\.nuget\\packages\\microsoft.extensions.configuration\\2.0.2\\microsoft.extensions.configuration.2.0.2.nupkg.sha512",
+    "C:\\Users\\eduar\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\2.0.2\\microsoft.extensions.configuration.abstractions.2.0.2.nupkg.sha512",
+    "C:\\Users\\eduar\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\eduar\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\2.0.0\\microsoft.extensions.logging.abstractions.2.0.0.nupkg.sha512",
+    "C:\\Users\\eduar\\.nuget\\packages\\microsoft.extensions.primitives\\2.0.0\\microsoft.extensions.primitives.2.0.0.nupkg.sha512",
+    "C:\\Users\\eduar\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.4.0\\system.runtime.compilerservices.unsafe.4.4.0.nupkg.sha512"
   ],
   "logs": []
 }
