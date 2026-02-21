@@ -34,10 +34,6 @@ app.UseCors();
 
 app.MapGet("/", () => 
 {
-    // Make sure to replace YOUR_S3_BUCKET_URL with your actual public S3 bucket URL 
-    // Example: https://eduardoos-static-files.s3.us-east-1.amazonaws.com
-    var s3BaseUrl = "/static";
-
     var html = $@"<!DOCTYPE html>
 <html lang=""en"">
 <head>
@@ -45,15 +41,15 @@ app.MapGet("/", () =>
     <meta name=""viewport"" content=""width=device-width, initial-scale=1.0"">
     <title>Eduardoos App</title>
     
-    <link rel=""icon"" type=""image/x-icon"" href=""{s3BaseUrl}/media/favicon.ico"">
+    <link rel=""icon"" type=""image/x-icon"" href=""/media/favicon.ico"">
     
-    <link rel=""stylesheet"" href=""{s3BaseUrl}/global.css"">
+    <link rel=""stylesheet"" href=""/global.css"">
 </head>
 <body>
     <h1>S3 Static Files Connected!</h1>
     <p>If the styling looks right and the console is clean, your pipeline is a success.</p>
     
-    <script src=""{s3BaseUrl}/global.js""></script>
+    <script src=""/global.js""></script>
 </body>
 </html>";
 
