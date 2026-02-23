@@ -52,7 +52,7 @@ app.MapGet("/", () =>
 <body>
     <h1>S3 Static Files Connected!</h1>
     <p>If the styling looks right and the console is clean, your pipeline is a success.</p>
-    
+    <h2>Testing nvim</p>
     <script src=""{s3BaseUrl}/global.js""></script>
 </body>
 </html>";
