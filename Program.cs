@@ -43,7 +43,7 @@ app.MapGet("/", () =>
 <head>
     <meta charset=""UTF-8"">
     <meta name=""viewport"" content=""width=device-width, initial-scale=1.0"">
-    <title>Eduardoos App</title>
+    <title>Eduardo Osteicoechea</title>
     
     <link rel=""icon"" type=""image/x-icon"" href=""{s3BaseUrl}/media/favicon.ico"">
     
@@ -57,7 +57,6 @@ app.MapGet("/", () =>
 </body>
 </html>";
 
-    // Results.Content ensures the browser renders it as a web page instead of raw text
     return Results.Content(html, "text/html");
 });
 
