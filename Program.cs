@@ -77,16 +77,25 @@ app.MapGet("/dbtest", async (IAmazonDynamoDB db) =>
     }
 });
 
-app.MapGet("/federated_consecuences", () => 
+app.MapGet("/federated_consequences", () => 
 {
-    var html = $@"
-    <h1>Federated consequences</h1>
-    <h2>Holy Children</h2>
+    var html = $@"<!DOCTYPE html>
+<html lang=""es"">
+<head>
+    <meta charset=""UTF-8"">
+    <meta name=""viewport"" content=""width=device-width, initial-scale=1.0"">
+    <title>Eduardo Osteicoechea</title>
+</head>
+<body>
+    <h1>Consecuencias Federadas</h1>
+    <h2>Santidad federada</h2>
     <p>Porque el marido incrédulo es santificado en la mujer, y la mujer incrédula en el marido; pues de otra manera vuestrosd hijos serían inmundos, mientras que ahora son santos</p>
     <p>1.Cor.7.14</p>
-    <h2>Federated consequence by Jesus</h2>
+    <h2>Juicio federado</h2>
     <p>""Y a sus hijos heriré de muestre, y todas las iglesias sabrán que yo soy el que escudriña la mente y el corazón; y os daré a cada uno según vuestras obras.""</p>
     <p>Ap.2.23</p>
+</body>
+</html>
 ";
 
     return Results.Content(html, "text/html");
