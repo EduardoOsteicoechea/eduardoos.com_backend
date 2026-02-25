@@ -77,4 +77,19 @@ app.MapGet("/dbtest", async (IAmazonDynamoDB db) =>
     }
 });
 
+app.MapGet("/federated_consecuences", () => 
+{
+    var html = $@"
+    <h1>Federated consequences</h1>
+    <h2>Holy Children</h2>
+    <p>Porque el marido incrédulo es santificado en la mujer, y la mujer incrédula en el marido; pues de otra manera vuestrosd hijos serían inmundos, mientras que ahora son santos</p>
+    <p>1.Cor.7.14</p>
+    <h2>Federated consequence by Jesus</h2>
+    <p>""Y a sus hijos heriré de muestre, y todas las iglesias sabrán que yo soy el que escudriña la mente y el corazón; y os daré a cada uno según vuestras obras.""</p>
+    <p>Ap.2.23</p>
+";
+
+    return Results.Content(html, "text/html");
+});
+
 app.Run();

@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("eduardoos.com_backend")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9a98d4c3709ea57389042dd1b1ebb58bf80fcebb")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5a58de2a726435f379a08bc5e2e71187e2601915")]
 [assembly: System.Reflection.AssemblyProductAttribute("eduardoos.com_backend")]
 [assembly: System.Reflection.AssemblyTitleAttribute("eduardoos.com_backend")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
