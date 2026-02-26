@@ -84,7 +84,7 @@ app.MapGet("/federated_consequences", () =>
     
     <h1>Consecuencias Federadas</h1>
     <h2>Santidad federada</h2>
-    <p>""Porque el marido incrédulo es santificado en la mujer, y la mujer incrédula en el marido; pues de otra manera vuestrosd hijos serían inmundos, mientras que ahora son santos""</p>
+    <p>""Porque el marido incrédulo es santificado en la mujer, y la mujer incrédula en el marido; pues de otra manera vuestros hijos serían inmundos, mientras que ahora son santos""</p>
     <p>1.Cor.7.14</p>
     <h2>Juicio federado</h2>
     <p>""Y a sus hijos heriré de muestre, y todas las iglesias sabrán que yo soy el que escudriña la mente y el corazón; y os daré a cada uno según vuestras obras.""</p>
