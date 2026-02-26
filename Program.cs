@@ -26,7 +26,7 @@ builder.Services.AddCors(options =>
               .AllowAnyMethod()
               .AllowAnyHeader();
     });
-}); 
+});
 
 var app = builder.Build();
 
@@ -50,7 +50,7 @@ var pageBottom = $@"
 </body>
 </html>";
 
-app.MapGet("/", () => 
+app.MapGet("/", () =>
 {
     var html = $@"{pageTop}
     <h1>S3 Static Files Connected!</h1>
@@ -63,13 +63,14 @@ app.MapGet("/", () =>
 
 app.MapGet("/dbtest", async (IAmazonDynamoDB db) =>
 {
-    try 
+    try
     {
         var response = await db.DescribeTableAsync("eduardoos-general-users");
-        return Results.Ok(new { 
-            Status = "Connected", 
+        return Results.Ok(new
+        {
+            Status = "Connected",
             TableName = response.Table.TableName,
-            ItemCount = response.Table.ItemCount 
+            ItemCount = response.Table.ItemCount
         });
     }
     catch (Exception ex)
@@ -78,24 +79,28 @@ app.MapGet("/dbtest", async (IAmazonDynamoDB db) =>
     }
 });
 
-app.MapGet("/federated_consequences", () => 
+app.MapGet("/federated_consequences", () =>
 {
     var html = $@"{pageTop}
     
     <h1>Consecuencias Federadas</h1>
     <br>
+
     <h2>Santidad federada</h2>
     <p>""Porque el marido incrédulo es santificado en la mujer, y la mujer incrédula en el marido; pues de otra manera vuestros hijos serían inmundos, mientras que ahora son santos""</p>
     <p>1.Cor.7.14</p>
     <br>
+
     <h2>Juicio federado</h2>
     <p>""Y a sus hijos heriré de muerte, y todas las iglesias sabrán que yo soy el que escudriña la mente y el corazón; y os daré a cada uno según vuestras obras.""</p>
     <p>Ap.2.23</p>
     <br>
+
     <h2>Elección federada</h2>
     <p>""Y dijo Jeremías a la familia de los recabitas: Así ha dicho Jehová de los ejercitos, Dios de Israel: Por cuanto obedecísteis al mandamiento de Jonadab vuestro padre, y guardásteis todos sus mandamientos, e hicisteis conforme a todas las cosas que os mandó; por tanto, así ha dicho Jehová de los ejercitos, Dios de Israel: No faltará de Jonadab hijo de Recab un varon que esté en mi presencia todos los días""</p>
     <p>Jer.35.18-19</p>
     <br>
+
     <h2>Endurecimiento federado</h2>
     <p>""""</p>
     <p>Mat.13.10-17</p>
@@ -103,6 +108,21 @@ app.MapGet("/federated_consequences", () =>
     <p>Rom.11.1-15</p>
     <p>""""</p>
     <p>Rom.1.18-32</p>
+    <br>
+
+    <h2>Corrupción federada</h2>
+    <p>""""</p>
+    <p>Rom.5.16-19</p>
+
+    <h2>Justificación federada</h2>
+    <p>""""</p>
+    <p>Rom.5.16-19</p>
+
+    <h2>Juicio federado</h2>
+    <p>""""</p>
+    <p>Gen.2</p>
+
+
     {pageBottom}";
 
     return Results.Content(html, "text/html");
