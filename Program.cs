@@ -87,7 +87,7 @@ app.MapGet("/federated_consequences", () =>
     <p>""Porque el marido incrédulo es santificado en la mujer, y la mujer incrédula en el marido; pues de otra manera vuestros hijos serían inmundos, mientras que ahora son santos""</p>
     <p>1.Cor.7.14</p>
     <h2>Juicio federado</h2>
-    <p>""Y a sus hijos heriré de muestre, y todas las iglesias sabrán que yo soy el que escudriña la mente y el corazón; y os daré a cada uno según vuestras obras.""</p>
+    <p>""Y a sus hijos heriré de muerte, y todas las iglesias sabrán que yo soy el que escudriña la mente y el corazón; y os daré a cada uno según vuestras obras.""</p>
     <p>Ap.2.23</p>
     <h2>Elección federada</h2>
     <p>""Y dijo Jeremías a la familia de los recabitas: Así ha dicho Jehová de los ejercitos, Dios de Israel: Por cuanto obedecísteis al mandamiento de Jonadab vuestro padre, y guardásteis todos sus mandamientos, e hicisteis conforme a todas las cosas que os mandó; por tanto, así ha dicho Jehová de los ejercitos, Dios de Israel: No faltará de Jonadab hijo de Recab un varon que esté en mi presencia todos los días""</p>
